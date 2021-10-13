@@ -9,6 +9,8 @@ public class PhotoRenderer : MonoBehaviour
 
     public string screenShotName = "Test";
     public Camera camera;
+
+    private int index = 0;
     void Start()
     {
         StartCoroutine(MakeScreenShot());
@@ -28,8 +30,9 @@ public class PhotoRenderer : MonoBehaviour
         texture.Apply();
 
         byte[] bytes = texture.EncodeToPNG();
-        
-        File.WriteAllBytes(Application.dataPath + "/ScreenShots/" + screenShotName + ".png", bytes);
+
+        index++;
+        File.WriteAllBytes(Application.dataPath + "/ScreenShots/" + screenShotName + index + ".png", bytes);
     }
 
     private void Update()

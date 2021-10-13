@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecc013b39a52ea42b3ac7d2fa95479a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenShotName: Test2
+  screenShotName: Test
   camera: {fileID: 963194227}
 --- !u!114 &963194230
 MonoBehaviour:

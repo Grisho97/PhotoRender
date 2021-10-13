@@ -34,8 +34,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PhotoRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotoRenderer.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634024191400</updated>
       <workItem from="1634024210955" duration="7370000" />
+      <workItem from="1634129946138" duration="524000" />
     </task>
     <servers />
   </component>
@@ -99,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

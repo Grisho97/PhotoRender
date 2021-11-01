@@ -1,21 +1,13 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Hidden/Test"
+Shader "Custom/Test"
 {
-    Properties
-    {
-        _MainTex ("Texture", 2D) = "white" {}
-    }
     SubShader
     {
         Tags
         {
             "RenderType" = "Opaque"
         }
-        
-    
-       ZWrite on
-		ZTest Always
 
         Pass
         {
@@ -36,7 +28,7 @@ Shader "Hidden/Test"
             {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-                float depth: SV_Depth;
+                float depth: DEPTH;
             };
 
             v2f vert (appdata v)
@@ -47,18 +39,20 @@ Shader "Hidden/Test"
                 o.depth = -UnityObjectToClipPos(v.vertex).z * _ProjectionParams.w;
                 return o;
             }
-
-            sampler2D _MainTex;
+            
             sampler2D _CameraDepthTexture;
 
             fixed4 frag (v2f i) : SV_Target
             {
                 //get depth from depth texture
-                float invert = tex2D(_CameraDepthTexture, i.uv).r;
+                float invert = tex2D(_CameraDepthTexture, i.uv);
                 //linear depth between camera and far clipping plane
-                invert = Linear01Depth(invert);
+                invert = 1-Linear01Depth(invert);
                 //depth as distance from camera in units
                 invert = invert * _ProjectionParams.z;
+
+                float invert1 = 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv));
+                
                 return fixed4 (invert,invert,invert,1);
             }
             ENDCG

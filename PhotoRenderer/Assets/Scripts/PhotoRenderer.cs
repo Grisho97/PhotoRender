@@ -21,7 +21,7 @@ public class PhotoRenderer : MonoBehaviour
     private void OnEnable()
     {
         camera.depthTextureMode |= DepthTextureMode.Depth;
-        camera.SetReplacementShader(DepthShader, "RenderType");
+        camera.SetReplacementShader(DepthShader, "");
     }
 
     private void OnDisable()

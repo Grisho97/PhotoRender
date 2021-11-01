@@ -180,6 +180,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &588493960
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Custom/Test
+  m_Shader: {fileID: 4800000, guid: 6c42d677f4e4bdf459d1d1bda83ee995, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &635810839
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,28 +343,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!21 &734507957
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Custom/Shade
-  m_Shader: {fileID: 4800000, guid: e13e8d57f43e99441a57cf2c44630ace, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269402253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecc013b39a52ea42b3ac7d2fa95479a, type: 3}
   m_Name: 
@@ -566,8 +566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de75d38b41105044abf58951c040d2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 734507957}
-  Shader: {fileID: 4800000, guid: e13e8d57f43e99441a57cf2c44630ace, type: 3}
+  mat: {fileID: 588493960}
+  Shader: {fileID: 4800000, guid: 6c42d677f4e4bdf459d1d1bda83ee995, type: 3}
 --- !u!114 &1269402256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 22.3
+  far clip plane: 36.4
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1733247595082533842, guid: 9ce0b639a00bb25498807fbc773dbb37, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce0b639a00bb25498807fbc773dbb37, type: 3}

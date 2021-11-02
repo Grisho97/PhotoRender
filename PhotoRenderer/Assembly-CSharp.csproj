@@ -56,7 +56,9 @@
      <Compile Include="Assets\Scripts\SceneBuilder.cs" />
      <Compile Include="Assets\Scripts\Rend.cs" />
      <None Include="Assets\Scripts\Shade.shader" />
+     <None Include="Assets\Shaders\Test2.shader" />
      <None Include="Assets\Shaders\Test.shader" />
+     <None Include="Assets\Shaders\Test3.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

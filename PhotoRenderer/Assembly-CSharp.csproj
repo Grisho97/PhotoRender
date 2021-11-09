@@ -58,7 +58,8 @@
      <Compile Include="Assets\Scripts\CamerasController.cs" />
      <Compile Include="Assets\Scripts\SceneBuilder.cs" />
      <Compile Include="Assets\Scripts\DepthRenderer.cs" />
-     <Compile Include="Assets\Scripts\Renderer.cs" />
+     <Compile Include="Assets\Scripts\ScreenRenderer.cs" />
+     <Compile Include="Assets\Scripts\ModelVisability.cs" />
      <None Include="Assets\Shaders\Shade.shader" />
      <None Include="Assets\Shaders\FullSegmentationShader.shader" />
      <None Include="Assets\Shaders\DepthShader.shader" />

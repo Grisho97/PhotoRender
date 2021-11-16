@@ -7,7 +7,7 @@ public class PartSegmentationRenderer : PhotoRenderer
     public Material PartSigmentationMaterial;
     public Shader PartSigmentationShader;
 
-    public FullSegmentationRenderer s;
+    //public FullSegmentationRenderer s;
 
     public override void OnEnable()
     {
@@ -18,9 +18,9 @@ public class PartSegmentationRenderer : PhotoRenderer
 
     public override void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        PartSigmentationMaterial.SetTexture("_Tex", s.maskTex);
+        PartSigmentationMaterial.SetTexture("_Tex", ModelTexture);
         
-        Graphics.Blit(src,dest,PartSigmentationMaterial);
+        Graphics.Blit(EnvironmentTexture,dest,PartSigmentationMaterial);
         base.OnRenderImage(src,dest);
     }
 }

@@ -17,6 +17,10 @@ public class PhotoRenderer : MonoBehaviour
     public int height;
 
     public bool GetScreenShot = false;
+
+    public RenderTexture DefaultTexture;
+    public RenderTexture ModelTexture;
+    public RenderTexture EnvironmentTexture;
     
     public virtual void OnEnable()
     {
@@ -54,7 +58,7 @@ public class PhotoRenderer : MonoBehaviour
         Texture2D texture = new Texture2D (width, height, TextureFormat.ARGB32, false);
         texture.ReadPixels (new Rect (0, 0, width, height), 0, 0);
         texture.Apply ();
-        
+
         byte[] bytes = texture.EncodeToPNG();
 
         index++;

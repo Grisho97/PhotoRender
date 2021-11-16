@@ -19,7 +19,9 @@ public class DepthRenderer : PhotoRenderer
 
     public override void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        Graphics.Blit(src,dest,DepthMaterial);
+        RenderTexture.active = EnvironmentTexture;
+        Graphics.Blit(EnvironmentTexture,dest,DepthMaterial);
         base.OnRenderImage(src,dest);
+        
     }
 }

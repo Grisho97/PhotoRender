@@ -10,7 +10,9 @@
         <e p="Scripts" t="Include">
           <e p="CamerasController.cs" t="Include" />
           <e p="DepthRenderer.cs" t="Include" />
+          <e p="EnvironmentRenderer.cs" t="Include" />
           <e p="FullSegmentationRenderer.cs" t="Include" />
+          <e p="ModelRenderer.cs" t="Include" />
           <e p="ModelVisability.cs" t="Include" />
           <e p="PartSegmentationRenderer.cs" t="Include" />
           <e p="PhotoRenderer.cs" t="Include" />

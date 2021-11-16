@@ -19,13 +19,13 @@ public class FullSegmentationRenderer : PhotoRenderer
     public override void ChangeBool()
     {
         base.ChangeBool();
-        maskTex = null;
+        //maskTex = null;
     }
 
 
     public override void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        Graphics.Blit(src,dest,FullSigmentationMaterial);
+        Graphics.Blit(ModelTexture,dest,FullSigmentationMaterial);
         
         if (maskTex == null)
         {

@@ -44,16 +44,11 @@ Shader "Custom/DepthShader"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                //get depth from depth texture
-                float invert = tex2D(_CameraDepthTexture, i.uv);
-                //linear depth between camera and far clipping plane
-                invert = 1-Linear01Depth(invert);
-                //depth as distance from camera in units
-                invert = invert * _ProjectionParams.z;
-
+                
                 float invert1 = 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv));
                 
                 return fixed4 (invert1,invert1,invert1,1);
+                
             }
             ENDCG
         }

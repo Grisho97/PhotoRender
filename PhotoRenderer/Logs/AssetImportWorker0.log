@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 19042.1348; Version 2009; 64bit' Language: 'ru' Physical Memory: 8042 MB
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'ru' Physical Memory: 16318 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,1321 +11,188 @@ C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Gregory/Desktop/Git/PhotoRender/PhotoRenderer
+C:/Projects/PhotoRender/PhotoRenderer
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59594
-Successfully changed project path to: C:/Users/Gregory/Desktop/Git/PhotoRender/PhotoRenderer
-C:/Users/Gregory/Desktop/Git/PhotoRender/PhotoRenderer
+50257
+Successfully changed project path to: C:/Projects/PhotoRender/PhotoRenderer
+C:/Projects/PhotoRender/PhotoRenderer
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 141.50 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 186.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Gregory/Desktop/Git/PhotoRender/PhotoRenderer/Assets
+[Subsystems] Discovering subsystems at path C:/Projects/PhotoRender/PhotoRenderer/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX150 (ID=0x1d12)
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
     Vendor:   
-    VRAM:     1983 MB
-    Driver:   25.21.14.1972
+    VRAM:     2988 MB
+    Driver:   27.21.14.5671
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009443 seconds.
+Registered in 0.149249 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 122.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 35.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in 18.054 seconds
+- Completed reload, in  7.144 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005732 seconds.
+Registered in 0.052675 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.400 seconds
+- Completed reload, in  2.524 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1249 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1696.
-Total: 3.924400 ms (FindLiveObjects: 0.331500 ms CreateObjectMapping: 0.149700 ms MarkObjects: 3.241600 ms  DeleteObjects: 0.197900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Shaders/EnvironmentTesture.renderTexture
-  artifactKey: Guid(3b6dc4fa604b5384d836db1b55d87927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/EnvironmentTesture.renderTexture using Guid(3b6dc4fa604b5384d836db1b55d87927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0f301c81ae674a36d137d86ae0ae46') in 0.315786 seconds
-  Import took 0.325513 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001991 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.378 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
 System memory in use after: 67.1 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1704.
-Total: 5.913800 ms (FindLiveObjects: 0.386500 ms CreateObjectMapping: 0.104600 ms MarkObjects: 5.258500 ms  DeleteObjects: 0.161100 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1696.
+Total: 8.785900 ms (FindLiveObjects: 0.159900 ms CreateObjectMapping: 0.078100 ms MarkObjects: 8.066900 ms  DeleteObjects: 0.479600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts
+  artifactKey: Guid(55a313e2fbbc8fb48914d01f88050e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(55a313e2fbbc8fb48914d01f88050e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78eb8127a1348abd6150649b96b67125') in 0.018533 seconds
+  Import took 0.023128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.902128 seconds.
+  path: Assets/Scripts/CameraStrategy
+  artifactKey: Guid(f9b5bd3e9e753b84ca6a723af632ef29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraStrategy using Guid(f9b5bd3e9e753b84ca6a723af632ef29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0847026776b87f46ce8b68c679fb43aa') in 0.010917 seconds
+  Import took 0.014522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.926140 seconds.
+  path: Assets/Scripts/CameraStrategy/CameraStrategy.cs
+  artifactKey: Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraStrategy/CameraStrategy.cs using Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cc1553698659333bb8464d4f8bf3dc') in 0.047526 seconds
+  Import took 0.052658 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.149685 seconds.
+Registered in 0.000793 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in 13.446 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1707.
-Total: 4.258400 ms (FindLiveObjects: 0.326400 ms CreateObjectMapping: 0.128400 ms MarkObjects: 3.665200 ms  DeleteObjects: 0.135800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001644 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.549 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1710.
-Total: 8.648600 ms (FindLiveObjects: 0.697200 ms CreateObjectMapping: 0.258200 ms MarkObjects: 7.513000 ms  DeleteObjects: 0.175700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002099 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.796 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1713.
-Total: 5.507400 ms (FindLiveObjects: 0.550200 ms CreateObjectMapping: 0.174500 ms MarkObjects: 4.642800 ms  DeleteObjects: 0.135900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002142 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.186 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1716.
-Total: 4.529900 ms (FindLiveObjects: 0.340500 ms CreateObjectMapping: 0.220600 ms MarkObjects: 3.851500 ms  DeleteObjects: 0.114500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002785 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.686 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1719.
-Total: 9.661400 ms (FindLiveObjects: 0.538700 ms CreateObjectMapping: 0.125600 ms MarkObjects: 8.781200 ms  DeleteObjects: 0.210600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001850 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.589 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1722.
-Total: 8.140000 ms (FindLiveObjects: 0.592500 ms CreateObjectMapping: 0.228700 ms MarkObjects: 7.089500 ms  DeleteObjects: 0.225300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001810 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.796 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.1 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1725.
-Total: 4.102800 ms (FindLiveObjects: 0.353600 ms CreateObjectMapping: 0.114900 ms MarkObjects: 3.488400 ms  DeleteObjects: 0.142800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002586 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.188 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1728.
-Total: 4.036700 ms (FindLiveObjects: 0.503400 ms CreateObjectMapping: 0.122000 ms MarkObjects: 3.288600 ms  DeleteObjects: 0.118900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001823 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.745 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1731.
-Total: 9.366500 ms (FindLiveObjects: 0.875700 ms CreateObjectMapping: 0.139100 ms MarkObjects: 8.025100 ms  DeleteObjects: 0.319500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 64532.680060 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.036435 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.043470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.017211 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010150 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.116247 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002075 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.005729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002356 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002462 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.006504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.264145 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004314 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011649 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.240617 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004376 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.240179 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004592 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.258231 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006349 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.016058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.258586 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004684 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013467 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.246607 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004992 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.247588 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004268 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.270675 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005302 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.236232 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005845 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.252050 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005026 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.248361 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004247 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.258928 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004359 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254759 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004455 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.250771 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006498 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.019307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.247584 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004555 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.240990 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006341 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.015477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.242384 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004821 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.256691 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004738 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.263057 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004627 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.229222 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004822 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.240312 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005199 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.257797 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004199 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.293362 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004901 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.239830 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004337 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.246831 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006731 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.016645 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.187069 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002021 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.005994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.294380 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004447 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.251643 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004336 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.242823 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004474 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.264125 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005261 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.271623 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005336 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.247594 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004303 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.250867 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004152 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011187 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254922 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005953 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.019818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.265425 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005579 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.016157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.234127 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004497 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.252644 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005023 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.237515 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005107 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.257772 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004138 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.249163 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004288 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.243516 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004499 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260973 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003731 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.010563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.285101 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005074 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.218376 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004669 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.242268 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004538 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.259285 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005717 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.280620 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004954 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.225793 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004679 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.267100 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004382 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.247188 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004520 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254179 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004502 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260274 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003882 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.010992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.250059 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004116 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260822 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004372 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254494 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005559 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.296127 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003641 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.010256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.243829 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004817 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.246486 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005234 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.243149 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004572 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.265985 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004858 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.015497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.193898 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004729 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.259920 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004185 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260083 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004646 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.249965 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005156 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.014639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.282713 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006139 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.017977 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.224024 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004651 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260728 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004325 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.012181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.261994 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004336 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.013263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.308023 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006133 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.015591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.369300 seconds.
-  path: Assets/Shaders/PartSegmentationShader.shader
-  artifactKey: Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/PartSegmentationShader.shader using Guid(6ddfcaf380b6aff429e2b9cd43b243c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003781 seconds
-  ERROR: Build asset version error: assets/shaders/partsegmentationshader.shader in SourceAssetDB has modification time of '2021-11-12T21:34:17.1402634Z' while content on disk has modification time of '2021-11-15T06:48:44.5279587Z'
-  Import took 0.011909 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001590 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.015 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.3 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1734.
-Total: 4.399100 ms (FindLiveObjects: 0.366300 ms CreateObjectMapping: 0.143600 ms MarkObjects: 3.778200 ms  DeleteObjects: 0.108300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002703 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.431 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1737.
-Total: 4.814100 ms (FindLiveObjects: 0.463600 ms CreateObjectMapping: 0.140800 ms MarkObjects: 4.052000 ms  DeleteObjects: 0.153800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002396 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.911 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.2 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1740.
-Total: 5.036300 ms (FindLiveObjects: 0.585900 ms CreateObjectMapping: 0.237900 ms MarkObjects: 4.073700 ms  DeleteObjects: 0.134600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000762 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.856 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1743.
-Total: 2.102200 ms (FindLiveObjects: 0.195000 ms CreateObjectMapping: 0.056700 ms MarkObjects: 1.790700 ms  DeleteObjects: 0.058000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1378.461564 seconds.
-  path: Assets/Shaders/EnvironmentTesture.renderTexture
-  artifactKey: Guid(3b6dc4fa604b5384d836db1b55d87927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/EnvironmentTesture.renderTexture using Guid(3b6dc4fa604b5384d836db1b55d87927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0588a68bd8a0918a2ac510e08333339d') in 0.046981 seconds
-  Import took 0.049580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Shaders/ModelTexture.renderTexture
-  artifactKey: Guid(99853a0c5f3e1a94bb3953d9eb05cc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ModelTexture.renderTexture using Guid(99853a0c5f3e1a94bb3953d9eb05cc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88464a78e81cfebf0bf364714ef5c16') in 0.015855 seconds
-  Import took 0.018799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.544982 seconds.
-  path: Assets/Scripts/PhotoRenderer.cs
-  artifactKey: Guid(fecc013b39a52ea42b3ac7d2fa95479a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PhotoRenderer.cs using Guid(fecc013b39a52ea42b3ac7d2fa95479a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f84f7fa47994864309b713e19ce957') in 0.018520 seconds
-  Import took 0.023458 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000774 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.829 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1747.
-Total: 1.892400 ms (FindLiveObjects: 0.153600 ms CreateObjectMapping: 0.046200 ms MarkObjects: 1.639800 ms  DeleteObjects: 0.051200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000723 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1750.
-Total: 2.105400 ms (FindLiveObjects: 0.182200 ms CreateObjectMapping: 0.058000 ms MarkObjects: 1.808000 ms  DeleteObjects: 0.055700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000932 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.984 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1753.
-Total: 2.607000 ms (FindLiveObjects: 0.314000 ms CreateObjectMapping: 0.063600 ms MarkObjects: 2.146200 ms  DeleteObjects: 0.081500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001094 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.851 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1756.
-Total: 2.207900 ms (FindLiveObjects: 0.304700 ms CreateObjectMapping: 0.090600 ms MarkObjects: 1.744300 ms  DeleteObjects: 0.066500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001073 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.971 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1759.
-Total: 3.565400 ms (FindLiveObjects: 0.182600 ms CreateObjectMapping: 0.047500 ms MarkObjects: 2.897100 ms  DeleteObjects: 0.436400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002383 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.984 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1762.
-Total: 2.134500 ms (FindLiveObjects: 0.205500 ms CreateObjectMapping: 0.052100 ms MarkObjects: 1.793000 ms  DeleteObjects: 0.082900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001006 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1765.
-Total: 1.704000 ms (FindLiveObjects: 0.147800 ms CreateObjectMapping: 0.044200 ms MarkObjects: 1.457100 ms  DeleteObjects: 0.053900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000943 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.113 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1768.
-Total: 2.118300 ms (FindLiveObjects: 0.258300 ms CreateObjectMapping: 0.075000 ms MarkObjects: 1.716500 ms  DeleteObjects: 0.066600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000952 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.197 seconds
+- Completed reload, in  0.958 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.2 MB.
-System memory in use after: 67.3 MB.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1771.
-Total: 1.817300 ms (FindLiveObjects: 0.213100 ms CreateObjectMapping: 0.048200 ms MarkObjects: 1.506200 ms  DeleteObjects: 0.047700 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1700.
+Total: 1.717800 ms (FindLiveObjects: 0.158000 ms CreateObjectMapping: 0.039100 ms MarkObjects: 1.422500 ms  DeleteObjects: 0.097200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001243 seconds.
+Registered in 0.000824 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.813 seconds
+- Completed reload, in  3.060 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.3 MB.
-System memory in use after: 67.3 MB.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1774.
-Total: 2.672800 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.057000 ms MarkObjects: 2.248600 ms  DeleteObjects: 0.087900 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1703.
+Total: 2.596100 ms (FindLiveObjects: 0.159700 ms CreateObjectMapping: 0.058100 ms MarkObjects: 2.314000 ms  DeleteObjects: 0.062800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.728507 seconds.
+  path: Assets/Scripts/CameraStrategy/CameraStrategy.cs
+  artifactKey: Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraStrategy/CameraStrategy.cs using Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c645c67cc5fbd65c04e857098ab80209') in 0.006105 seconds
+  Import took 0.008887 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001082 seconds.
+Registered in 0.003933 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1706.
+Total: 1.797600 ms (FindLiveObjects: 0.145000 ms CreateObjectMapping: 0.039900 ms MarkObjects: 1.528300 ms  DeleteObjects: 0.083600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4409.051278 seconds.
+  path: Assets/Scripts/CameraStrategy/CameraStrategy.cs
+  artifactKey: Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraStrategy/CameraStrategy.cs using Guid(bb8917880a3c21c4eae6cb9c23fee9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd49b8d864ea30c554f71158cf81a7c7') in 0.004540 seconds
+  Import took 0.006626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.974057 seconds.
+  path: Assets/Scripts/Renderers
+  artifactKey: Guid(169c85ce4658c894491b1c0a43a5a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Renderers using Guid(169c85ce4658c894491b1c0a43a5a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429e656464b9523331f25a69a3660465') in 0.007903 seconds
+  Import took 0.010565 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000748 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
@@ -1334,15 +201,179 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.019 seconds
+- Completed reload, in  0.922 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1709.
+Total: 1.967300 ms (FindLiveObjects: 0.186800 ms CreateObjectMapping: 0.040600 ms MarkObjects: 1.633600 ms  DeleteObjects: 0.104900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.173191 seconds.
+  path: Assets/Scripts/EnvironmentRenderer.cs
+  artifactKey: Guid(d6926762d05124f49a90fcca172b085c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnvironmentRenderer.cs using Guid(d6926762d05124f49a90fcca172b085c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e2aed81c4ce0ab5133271be3a6286b') in 0.010646 seconds
+  Import took 0.012931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003359 seconds.
+  path: Assets/Scripts/EnvironmentRenderer.cs
+  artifactKey: Guid(d6926762d05124f49a90fcca172b085c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnvironmentRenderer.cs using Guid(d6926762d05124f49a90fcca172b085c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e2aed81c4ce0ab5133271be3a6286b') in 0.005042 seconds
+  Import took 0.009398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.376158 seconds.
+  path: Assets/Scripts/FullSegmentationRenderer.cs
+  artifactKey: Guid(9c796a0258727174f8112704b006bec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FullSegmentationRenderer.cs using Guid(9c796a0258727174f8112704b006bec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948ecffbc8c0962e4de1ce8cd8b53bb2') in 0.010408 seconds
+  Import took 0.012597 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000735 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 2.358600 ms (FindLiveObjects: 0.156200 ms CreateObjectMapping: 0.080700 ms MarkObjects: 2.050700 ms  DeleteObjects: 0.069500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.786331 seconds.
+  path: Assets/Scripts/ModelVisability.cs
+  artifactKey: Guid(b1c9f4a26a444d2438eb27c5cc482c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ModelVisability.cs using Guid(b1c9f4a26a444d2438eb27c5cc482c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7eed043c4103349e96937433aee614') in 0.009338 seconds
+  Import took 0.011539 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000794 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1213 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.3 MB.
-System memory in use after: 67.3 MB.
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1777.
-Total: 1.907400 ms (FindLiveObjects: 0.153900 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.670500 ms  DeleteObjects: 0.049000 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1714.
+Total: 2.008200 ms (FindLiveObjects: 0.255700 ms CreateObjectMapping: 0.109200 ms MarkObjects: 1.570000 ms  DeleteObjects: 0.072100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.698885 seconds.
+  path: Assets/Scripts/CamerasController.cs
+  artifactKey: Guid(cab6fabb1c5283149b73ed8c1aef3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CamerasController.cs using Guid(cab6fabb1c5283149b73ed8c1aef3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb2e27fa288dbfed615740c3047c1a0') in 0.008942 seconds
+  Import took 0.011158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031975 seconds.
+  path: Assets/Scripts/CamerasController.cs
+  artifactKey: Guid(cab6fabb1c5283149b73ed8c1aef3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CamerasController.cs using Guid(cab6fabb1c5283149b73ed8c1aef3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb2e27fa288dbfed615740c3047c1a0') in 0.002763 seconds
+  Import took 0.006241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.332257 seconds.
+  path: Assets/Scripts/SceneBuilder.cs
+  artifactKey: Guid(844f8bb7e9bbc694396aa79468aec77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SceneBuilder.cs using Guid(844f8bb7e9bbc694396aa79468aec77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7b1c1e485801c6e7399688decd15b9') in 0.007942 seconds
+  Import took 0.010292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.725404 seconds.
+  path: Assets/Scripts/TestRenderLogic.cs
+  artifactKey: Guid(00c8f6cd622fcad4fb08b40cee2328d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestRenderLogic.cs using Guid(00c8f6cd622fcad4fb08b40cee2328d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e35c241b5f6e1b163f627db69a8474') in 0.010121 seconds
+  Import took 0.012417 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000752 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.000 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1718.
+Total: 1.685800 ms (FindLiveObjects: 0.146800 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.443400 ms  DeleteObjects: 0.051200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1214 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1721.
+Total: 1.951000 ms (FindLiveObjects: 0.171200 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.645900 ms  DeleteObjects: 0.080100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2218.065071 seconds.
+  path: Assets/Scripts/TestRenderLogic.cs
+  artifactKey: Guid(00c8f6cd622fcad4fb08b40cee2328d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestRenderLogic.cs using Guid(00c8f6cd622fcad4fb08b40cee2328d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abea48912236908636434033f7d4ed0') in 0.004165 seconds
+  Import took 0.006369 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -11,11 +11,11 @@ public class CameraStrategy : MonoBehaviour
     public Transform TargetTransform;
     public int AmmountofPhotos;
 
-    private List<Transform> cameraPositions;
+    public List<Transform> cameraPositions;
 
     private void Start()
     {
-        Rotate360();
+        //Rotate360();
     }
 
     private void Rotate360()
@@ -25,7 +25,7 @@ public class CameraStrategy : MonoBehaviour
         if( AmmountofPhotos == 0 )
             return;
         
-        for (int i = 0; i < AmmountofPhotos-1; i++)
+        for (int i = 0; i < AmmountofPhotos; i++)
         {
             cameraPositions.Add(CameraTransform);
             CameraTransform.RotateAround(TargetTransform.position, Vector3.up, 360/AmmountofPhotos);
@@ -35,6 +35,7 @@ public class CameraStrategy : MonoBehaviour
 
     public List<Transform> GetCameraPositions()
     {
+        Rotate360();
         return cameraPositions;
     }
 }

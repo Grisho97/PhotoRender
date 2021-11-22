@@ -164,6 +164,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &290020259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7346491937167952309, guid: bf258fe6c27c0b648ba3042f7768cbd9, type: 3}
+  m_PrefabInstance: {fileID: 7580282406197735405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &299210023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: model
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee92e309671ea1346b6311f429ac8f3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee92e309671ea1346b6311f429ac8f3e, type: 3}
 --- !u!1 &1131896437
@@ -1596,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1444845025
 Light:
   m_ObjectHideFlags: 0
@@ -1982,14 +1991,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c8f6cd622fcad4fb08b40cee2328d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cameras: {fileID: 1613664259}
   EnvironmentPrefabs: []
-  ModelPrefabs: []
+  ModelPrefabs:
+  - {fileID: 290020259}
   LightPrefabs: []
-  ModelTransforms:
-    modelPosition: []
-    modelRotation: []
-  CameraTransforms: []
   CameraStrategy: {fileID: 1958300354}
+  transformData:
+    ModelTransformsList: []
+  CameraTransforms: []
 --- !u!4 &1534584895
 Transform:
   m_ObjectHideFlags: 0
@@ -2095,6 +2105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669464799}
   - component: {fileID: 1669464798}
+  - component: {fileID: 1669464800}
   m_Layer: 0
   m_Name: PositionSaver
   m_TagString: Untagged
@@ -2117,8 +2128,7 @@ MonoBehaviour:
   Model: {fileID: 858253329}
   fileName: 1
   Transforms:
-    modelPosition: []
-    modelRotation: []
+    ModelTransformsList: []
 --- !u!4 &1669464799
 Transform:
   m_ObjectHideFlags: 0
@@ -2133,6 +2143,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669464800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669464797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce1a9dcc35bab24685c43a0b09303b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Model: {fileID: 0}
+  fileName: 
+  Transforms:
+    ModelTransformsList: []
 --- !u!1 &1958300353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1958300359}
   - component: {fileID: 1958300358}
-  - component: {fileID: 1958300357}
   - component: {fileID: 1958300356}
   - component: {fileID: 1958300355}
   - component: {fileID: 1958300354}
@@ -2169,7 +2194,7 @@ MonoBehaviour:
   CameraTransform: {fileID: 1613664260}
   CameraStartTransform: {fileID: 1958300359}
   TargetTransform: {fileID: 299210025}
-  AmmountofPhotos: 3
+  AmmountofPhotos: 2
   cameraPositions: []
 --- !u!114 &1958300355
 MonoBehaviour:
@@ -2248,14 +2273,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!81 &1958300357
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958300353}
-  m_Enabled: 1
 --- !u!20 &1958300358
 Camera:
   m_ObjectHideFlags: 0
@@ -2329,7 +2346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2106169035
 Light:
   m_ObjectHideFlags: 0

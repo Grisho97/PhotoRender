@@ -10,11 +10,11 @@ public class PositionSaver : MonoBehaviour
     public string fileName;
     
     [SerializeField]
-    private ModelTransforms Transforms;
+    private TransformData Transforms;
 
     private void OnEnable()
     {
-        Transforms = new ModelTransforms {modelPosition = new List<Vector3>(), modelRotation = new List<Vector3>()};
+        Transforms = new TransformData {ModelTransformsList = new List<ModelTransforms>()};
     }
 
     void Update()
@@ -23,6 +23,7 @@ public class PositionSaver : MonoBehaviour
         {
             GetPosition();
         }
+        
 
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -32,8 +33,13 @@ public class PositionSaver : MonoBehaviour
 
     private void GetPosition()
     {
-        Transforms.modelPosition.Add(Model.position);
-        Transforms.modelRotation.Add(Model.rotation.eulerAngles);
+        ModelTransforms modelTransforms = new ModelTransforms
+        {
+            modelPosition = Model.position,
+            modelRotation = Model.rotation.eulerAngles
+        };
+        Transforms.ModelTransformsList.Add(modelTransforms);
+
     }
 
     private void SaveFile()
@@ -43,8 +49,14 @@ public class PositionSaver : MonoBehaviour
 }
 
 [Serializable]
-public class ModelTransforms
+public struct ModelTransforms
 {
-    public List<Vector3> modelPosition;
-    public List<Vector3> modelRotation;
+    public Vector3 modelPosition;
+    public Vector3 modelRotation;
+}
+
+[Serializable]
+public class TransformData
+{
+    public List<ModelTransforms> ModelTransformsList;
 }

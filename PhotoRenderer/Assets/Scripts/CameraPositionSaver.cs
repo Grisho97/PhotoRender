@@ -1,18 +1,55 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CameraPositionSaver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform Model;
+    public string fileName;
+    
+    [SerializeField]
+    private TransformData Transforms;
+
+    private void OnEnable()
     {
-        
+        Transforms = new TransformData {ModelTransformsList = new List<ModelTransforms>()};
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GetPosition();
+        }
         
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveFile();
+        }
     }
+
+    private void GetPosition()
+    {
+        ModelTransforms modelTransforms = new ModelTransforms
+        {
+            modelPosition = Model.position,
+            modelRotation = Model.rotation.eulerAngles
+        };
+        Transforms.ModelTransformsList.Add(modelTransforms);
+
+    }
+
+    private void SaveFile()
+    {
+        File.WriteAllText(Application.dataPath + "/Resources/CameraParameters/"+ fileName + ".json", JsonUtility.ToJson(Transforms));
+    }
+}
+
+[Serializable]
+public struct CameraParameters
+{
+    
 }

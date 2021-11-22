@@ -16,12 +16,17 @@ public class CamerasController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            LimitationsCheck();
+            //MakeRenderers();
+        }
+    }
+
+    public void MakeRenderers()
+    {
+        LimitationsCheck();
             
-            foreach (var camera in cameras)
-            {
-                camera.ChangeBool();
-            }
+        foreach (var camera in cameras)
+        {
+            camera.ChangeBool();
         }
     }
 

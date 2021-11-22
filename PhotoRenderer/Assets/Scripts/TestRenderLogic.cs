@@ -17,6 +17,9 @@ public class TestRenderLogic : MonoBehaviour
     [SerializeField]
     private TransformData transformData;
 
+    [SerializeField] 
+    private CameraParameters cameraParameters;
+
     [SerializeField]
     private List<Transform> CameraTransforms;
     
@@ -51,8 +54,11 @@ public class TestRenderLogic : MonoBehaviour
             transformData =
                 JsonUtility.FromJson<TransformData>(
                     File.ReadAllText(Application.dataPath + "/Resources/ModelPositions/1.json"));
+            
+            cameraParameters = JsonUtility.FromJson<CameraParameters>(
+                File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/1.json"));
 
-            CameraTransforms = CameraStrategy.GetCameraPositions();
+            CameraTransforms = CameraStrategy.GetCameraPositions(cameraParameters);
             StartCoroutine(NextStep());
         }
     }

@@ -33,8 +33,12 @@ public class CameraStrategy : MonoBehaviour
         
     }
 
-    public List<Transform> GetCameraPositions()
+    public List<Transform> GetCameraPositions(CameraParameters cameraParameters)
     {
+        CameraStartTransform.position = cameraParameters.CameraStartPosition;
+        CameraStartTransform.eulerAngles = cameraParameters.CameraStartRotation;
+        TargetTransform.position = cameraParameters.TargetPosition;
+        AmmountofPhotos = cameraParameters.AmmountofPhotos;
         Rotate360();
         return cameraPositions;
     }

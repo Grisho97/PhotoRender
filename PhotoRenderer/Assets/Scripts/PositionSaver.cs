@@ -36,7 +36,7 @@ public class PositionSaver : MonoBehaviour
         ModelTransforms modelTransforms = new ModelTransforms
         {
             modelPosition = Model.position,
-            modelRotation = Model.rotation.eulerAngles
+            modelRotation = Model.eulerAngles
         };
         Transforms.ModelTransformsList.Add(modelTransforms);
 

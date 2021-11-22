@@ -6,15 +6,18 @@ using UnityEngine;
 
 public class CameraPositionSaver : MonoBehaviour
 {
-    public Transform Model;
+    public Transform CameraTransform;
+    public Transform TargetTransform;
+    public int AmmountOfPhotos;
     public string fileName;
     
     [SerializeField]
-    private TransformData Transforms;
+    private CameraParameters cameraParameters;
 
     private void OnEnable()
     {
-        Transforms = new TransformData {ModelTransformsList = new List<ModelTransforms>()};
+        cameraParameters = new CameraParameters();
+        CameraTransform = GetComponent<Transform>();
     }
 
     void Update()
@@ -33,23 +36,25 @@ public class CameraPositionSaver : MonoBehaviour
 
     private void GetPosition()
     {
-        ModelTransforms modelTransforms = new ModelTransforms
-        {
-            modelPosition = Model.position,
-            modelRotation = Model.rotation.eulerAngles
-        };
-        Transforms.ModelTransformsList.Add(modelTransforms);
+        TargetTransform = GetComponent<Transform>();
+        cameraParameters.CameraStartPosition = CameraTransform.position;
+        cameraParameters.CameraStartRotation = CameraTransform.eulerAngles;
+        cameraParameters.TargetPosition = TargetTransform.position;
+        cameraParameters.AmmountofPhotos = AmmountOfPhotos;
 
     }
 
     private void SaveFile()
     {
-        File.WriteAllText(Application.dataPath + "/Resources/CameraParameters/"+ fileName + ".json", JsonUtility.ToJson(Transforms));
+        File.WriteAllText(Application.dataPath + "/Resources/CameraParameters/"+ fileName + ".json", JsonUtility.ToJson(cameraParameters));
     }
 }
 
 [Serializable]
 public struct CameraParameters
 {
-    
+    public Vector3 CameraStartPosition;
+    public Vector3 CameraStartRotation;
+    public Vector3 TargetPosition;
+    public int AmmountofPhotos;
 }

@@ -22,13 +22,13 @@ public class CameraPositionSaver : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKey(KeyCode.E))
         {
             GetPosition();
         }
         
 
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             SaveFile();
         }
@@ -36,7 +36,6 @@ public class CameraPositionSaver : MonoBehaviour
 
     private void GetPosition()
     {
-        TargetTransform = GetComponent<Transform>();
         cameraParameters.CameraStartPosition = CameraTransform.position;
         cameraParameters.CameraStartRotation = CameraTransform.eulerAngles;
         cameraParameters.TargetPosition = TargetTransform.position;

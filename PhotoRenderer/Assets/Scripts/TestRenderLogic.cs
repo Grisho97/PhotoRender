@@ -20,7 +20,7 @@ public class TestRenderLogic : MonoBehaviour
     private CameraParameters cameraParameters;
 
     [SerializeField]
-    private List<Transform> cameraTransforms;
+    private List<CameraTransformData> cameraTransforms;
     
     private CameraStrategy cameraStrategy;
     private CamerasController camerasController;
@@ -61,8 +61,9 @@ public class TestRenderLogic : MonoBehaviour
                 File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
             
             cameraStrategy = new CameraStrategy();
-            cameraTransforms = cameraStrategy.GetCameraPositions(cameraParameters);
             
+            cameraTransforms = cameraStrategy.GetCameraPositions(cameraParameters, cameraTransform);
+
             StartCoroutine(NextStep());
         }
     }
@@ -83,7 +84,8 @@ public class TestRenderLogic : MonoBehaviour
 
     private void SetParameters(int i, int j)
     {
-        cameraTransform = cameraTransforms[j];
+        cameraTransform.position = cameraTransforms[j].cameraPosition;
+        cameraTransform.eulerAngles = cameraTransforms[j].cameraRotation;
         modelTransform.position = transformData.ModelTransformsList[i].modelPosition;
         modelTransform.eulerAngles = transformData.ModelTransformsList[i].modelRotation;
     }

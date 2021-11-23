@@ -19,13 +19,13 @@ public class PositionSaver : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             GetPosition();
         }
         
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             SaveFile();
         }

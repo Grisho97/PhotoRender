@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraStrategy : MonoBehaviour
+public class CameraStrategy
 {
     public Transform CameraTransform;
 
@@ -12,11 +12,7 @@ public class CameraStrategy : MonoBehaviour
     public int AmmountofPhotos;
 
     public List<Transform> cameraPositions;
-
-    private void Start()
-    {
-        //Rotate360();
-    }
+    
 
     private void Rotate360()
     {

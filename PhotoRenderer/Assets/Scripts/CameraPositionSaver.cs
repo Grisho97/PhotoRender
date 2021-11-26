@@ -2,10 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Experimental.TerrainAPI;
 using UnityEngine;
 
 public class CameraPositionSaver : MonoBehaviour
 {
+    public enum CameraStrategyName
+    {
+        Rotate360,
+        WallMove,
+        SecurityCamera
+    }
+
+    public CameraStrategyName cameraStrategyName;
+    public CameraStrategy CameraStrategy;
+    
     public Transform CameraTransform;
     public Transform TargetTransform;
     public int AmmountOfPhotos;
@@ -13,6 +24,8 @@ public class CameraPositionSaver : MonoBehaviour
     
     [SerializeField]
     private CameraParameters cameraParameters;
+
+    private CameraStrategyName oldName;
 
     private void OnEnable()
     {
@@ -22,6 +35,11 @@ public class CameraPositionSaver : MonoBehaviour
 
     void Update()
     {
+        if (oldName != cameraStrategyName)
+        {
+             
+        }
+        
         if (Input.GetKey(KeyCode.E))
         {
             GetPosition();
@@ -47,10 +65,12 @@ public class CameraPositionSaver : MonoBehaviour
     {
         File.WriteAllText(Application.dataPath + "/Resources/CameraParameters/"+ fileName + ".json", JsonUtility.ToJson(cameraParameters));
     }
+    
+    
 }
 
 [Serializable]
-public struct CameraParameters
+public class CameraParameters
 {
     public Vector3 CameraStartPosition;
     public Vector3 CameraStartRotation;

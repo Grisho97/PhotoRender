@@ -20,31 +20,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a42d015-be39-415b-9f25-aaa79cd6ce54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/contentModel.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoRenderer/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/DepthMaps/DepthMap4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/FullSegmentation/FS4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/PartSegmentation/PS4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OutPut/ScreenShots/ScreenShot4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CameraParameters/.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CameraParameters/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/CameraParameters/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraPositionSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraPositionSaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestRenderLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestRenderLogic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/CameraStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/ICameraStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/CameraStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/ICameraStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/Rotate360.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/Rotate360.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/SecurityCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/SecurityCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/WallMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/WallMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CamerasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CamerasController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Renderers/PhotoRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Renderers/PhotoRenderer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/03/0349710082d2a9f0b83228ddaa69bf99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/15/15408b5d1074326e2957bf8007a3c68f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/7309b8e181affcce23a278db5afc3cf4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/821d3065e4cb4f0afc8ae94529c4057a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/843403298a32fc455373c9093e91e74f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/92/9285efda799e8c0f84e7384597ce3425" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9f24b6b537990902e90ce8d57b5d689b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a2/a2e6e3d5fd3942b4b760ae57e93c46f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b96bc7f408eb4602d7db42b5e0bff703" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ea/ea9791e7a7478728163d1d11a31d944a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.1.1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.1.1/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/27/279d7df5b691698eb2d5102ac730bab9.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/27/279d7df5b691698eb2d5102ac730bab9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/ed/edbc0227600be77c946f98474a31533a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/ed/edbc0227600be77c946f98474a31533a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +107,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PositionSaver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraStrategy/Rotate360.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,11 +136,17 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/DepthShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/FullSegmentationShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/PartSegmentationShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CamerasController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PositionSaver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraPositionSaver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/CameraStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestRenderLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/CameraStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/ICameraStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/WallMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraPositionSaver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/Rotate360.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraStrategy/SecurityCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CamerasController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RenderLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Renderers/PhotoRenderer.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
@@ -113,9 +171,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -123,9 +180,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -245,6 +301,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="227" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1636404454462" />
+    <state x="265" y="42" key="RiderGenerateDialog" timestamp="1638008430068">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="265" y="42" key="RiderGenerateDialog/0.0.1280.680@0.0.1280.680" timestamp="1638008430068" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1638004316420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1638004316420" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1636786100147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

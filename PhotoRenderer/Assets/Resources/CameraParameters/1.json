@@ -1,1 +1,1 @@
-{"CameraStartPosition":{"x":-5.599999904632568,"y":6.5,"z":-15.300000190734864},"CameraStartRotation":{"x":14.749641418457032,"y":0.0,"z":0.0},"TargetPosition":{"x":5.090000152587891,"y":0.6000000238418579,"z":7.289999961853027},"AmmountofPhotos":2}
+{"CameraSrategyName":"SecurityCamera","CameraStartPosition":{"x":-5.599999904632568,"y":6.5,"z":-15.300000190734864},"CameraStartRotation":{"x":14.749645233154297,"y":0.0,"z":0.0},"TargetPosition":{"x":-5.599999904632568,"y":3.088414192199707,"z":-2.341564178466797},"Angle":20.0,"AmmountOfSteps":1}

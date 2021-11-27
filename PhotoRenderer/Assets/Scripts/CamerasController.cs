@@ -12,13 +12,6 @@ public class CamerasController : MonoBehaviour
 
     public Texture2D alfa;
     public Texture2D beta;
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //MakeRenderers();
-        }
-    }
 
     public void MakeRenderers()
     {

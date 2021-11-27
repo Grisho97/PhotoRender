@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEditor.Experimental.TerrainAPI;
 using UnityEngine;
 
@@ -15,17 +16,19 @@ public class CameraPositionSaver : MonoBehaviour
     }
 
     public CameraStrategyName cameraStrategyName;
-    public CameraStrategy CameraStrategy;
+
+    [SerializeField] private Rotate360 rotate360;
+    [SerializeField] private WallMove wallMove;
+    [SerializeField] private SecurityCamera securityCamera;
     
     public Transform CameraTransform;
     public Transform TargetTransform;
-    public int AmmountOfPhotos;
     public string fileName;
     
     [SerializeField]
     private CameraParameters cameraParameters;
 
-    private CameraStrategyName oldName;
+    private ICameraStrategy CameraStrategy;
 
     private void OnEnable()
     {
@@ -35,14 +38,11 @@ public class CameraPositionSaver : MonoBehaviour
 
     void Update()
     {
-        if (oldName != cameraStrategyName)
-        {
-             
-        }
+        CameraTransform.LookAt(TargetTransform);
         
         if (Input.GetKey(KeyCode.E))
         {
-            GetPosition();
+            GetParams();
         }
         
 
@@ -52,13 +52,25 @@ public class CameraPositionSaver : MonoBehaviour
         }
     }
 
-    private void GetPosition()
+    private void GetParams()
     {
+        switch (cameraStrategyName)
+        {
+            case CameraStrategyName.Rotate360:
+                CameraStrategy = rotate360;
+                break;
+            case CameraStrategyName.WallMove:
+                CameraStrategy = wallMove;
+                break;
+            case CameraStrategyName.SecurityCamera:
+                CameraStrategy = securityCamera;
+                break;
+        }
+        cameraParameters.CameraSrategyName = cameraStrategyName.ToString();
         cameraParameters.CameraStartPosition = CameraTransform.position;
         cameraParameters.CameraStartRotation = CameraTransform.eulerAngles;
         cameraParameters.TargetPosition = TargetTransform.position;
-        cameraParameters.AmmountofPhotos = AmmountOfPhotos;
-
+        cameraParameters = CameraStrategy.GetCameraParameters(cameraParameters);
     }
 
     private void SaveFile()
@@ -72,8 +84,9 @@ public class CameraPositionSaver : MonoBehaviour
 [Serializable]
 public class CameraParameters
 {
+    public string CameraSrategyName;
     public Vector3 CameraStartPosition;
     public Vector3 CameraStartRotation;
     public Vector3 TargetPosition;
-    public int AmmountofPhotos;
 }
+

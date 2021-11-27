@@ -22,7 +22,7 @@ public class RenderLogic : MonoBehaviour
     [SerializeField]
     private List<CameraTransformData> cameraTransforms;
     
-    private CameraStrategy cameraStrategy;
+    private ICameraStrategy cameraStrategy;
     private CamerasController camerasController;
     private Transform cameraTransform;
     private Transform modelTransform;
@@ -59,8 +59,28 @@ public class RenderLogic : MonoBehaviour
             
             cameraParameters = JsonUtility.FromJson<CameraParameters>(
                 File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
-            
-            cameraStrategy = new CameraStrategy();
+
+            switch (cameraParameters.CameraSrategyName)
+            {
+                case "Rotate360":
+                    cameraStrategy = new Rotate360();
+                    cameraParameters = new CameraParametersRotate360();
+                    cameraParameters = JsonUtility.FromJson<CameraParametersRotate360>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    break;
+                case "WallMove":
+                    cameraStrategy = new WallMove();
+                    cameraParameters = new CameraParametersWallMove();
+                    cameraParameters = JsonUtility.FromJson<CameraParametersWallMove>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    break;
+                case "SecurityCamera":
+                    cameraStrategy = new SecurityCamera();
+                    cameraParameters = new SecurityCamera.CameraParametersSecurityCamera();
+                    cameraParameters = JsonUtility.FromJson<SecurityCamera.CameraParametersSecurityCamera>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    break;
+            }
             
             cameraTransforms = cameraStrategy.GetCameraPositions(cameraParameters, cameraTransform);
 
@@ -70,6 +90,7 @@ public class RenderLogic : MonoBehaviour
 
     IEnumerator NextStep()
     {
+        yield return null;
         for (int i = 0; i < transformData.ModelTransformsList.Count; i++)
         {
             for (int j = 0; j < cameraTransforms.Count; j++)
@@ -77,7 +98,7 @@ public class RenderLogic : MonoBehaviour
                 SetParameters(i,j);
                 camerasController.MakeRenderers();
                 Debug.Log("Render");
-                yield return new WaitForEndOfFrame();
+                yield return null;
             }
         }
     }
@@ -91,6 +112,7 @@ public class RenderLogic : MonoBehaviour
     }
 }
 
+[Serializable]
 public struct ConfigurationFile
 {
     public string EnvironmentFileName;
@@ -98,4 +120,11 @@ public struct ConfigurationFile
     public string LightFileName;
     public string PositionsFileName;
     public string CameraStrategyFileName;
+}
+
+[Serializable]
+public class CameraTransformData: CameraParameters
+{
+    public Vector3 cameraPosition;
+    public Vector3 cameraRotation;
 }

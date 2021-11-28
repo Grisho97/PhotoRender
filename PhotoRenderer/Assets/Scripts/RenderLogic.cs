@@ -12,16 +12,20 @@ public class RenderLogic : MonoBehaviour
     public List<GameObject> EnvironmentPrefabs;
     public List<GameObject> ModelPrefabs;
     public List<GameObject> LightPrefabs;
+    
 
     [SerializeField]
-    private TransformData transformData;
+    private List<TransformData> transformData;
 
     [SerializeField] 
-    private CameraParameters cameraParameters;
+    private List<CameraParameters> cameraParameters;
 
     [SerializeField]
     private List<CameraTransformData> cameraTransforms;
-    
+
+    [SerializeField]
+    private ConfigurationFile config;
+    private List<ConfigurationData> configurationData;
     private ICameraStrategy cameraStrategy;
     private CamerasController camerasController;
     private Transform cameraTransform;
@@ -32,88 +36,128 @@ public class RenderLogic : MonoBehaviour
     {
         camerasController = Cameras.GetComponent<CamerasController>();
         cameraTransform = Cameras.GetComponent<Transform>();
-        modelTransform = ModelPrefabs[0].GetComponent<Transform>();
-    }
-
-
-    private void Start()
-    {
-        BuildAllPrefabs();
-    }
-
-    private void BuildAllPrefabs()
-    {
-        
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            File.WriteAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile1.json", JsonUtility.ToJson(config));
+        }
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ConfigurationFile config = JsonUtility.FromJson<ConfigurationFile>(
+            config = JsonUtility.FromJson<ConfigurationFile>(
                 File.ReadAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile.json"));
-            
-            transformData =
-                JsonUtility.FromJson<TransformData>(
-                    File.ReadAllText(Application.dataPath + "/Resources/ModelPositions/" + config.PositionsFileName +".json"));
-            
-            cameraParameters = JsonUtility.FromJson<CameraParameters>(
-                File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
 
-            switch (cameraParameters.CameraSrategyName)
+            configurationData = config.ConfigurationDatas;
+
+            BuildAllPrefabs();
+            StartCoroutine(NextStep());
+        }
+    }
+
+    private void BuildAllPrefabs()
+    {
+        EnvironmentPrefabs = new List<GameObject>();
+        ModelPrefabs = new List<GameObject>();
+        LightPrefabs = new List<GameObject>();
+
+        for (int i = 0; i < configurationData.Count; i++)
+        {
+            EnvironmentPrefabs.Add(Resources.Load("EnvironmentPrefabs/" +
+                                                              configurationData[i].EnvironmentFileName) as GameObject);
+            Instantiate(EnvironmentPrefabs[i]);
+            EnvironmentPrefabs[i].SetActive(false);
+
+            ModelPrefabs.Add(Resources.Load<GameObject>("ModelPrefabs/" +
+                                                        configurationData[i].ModelFileName));
+            Instantiate(ModelPrefabs[i]);
+            ModelPrefabs[i].SetActive(false);
+
+            LightPrefabs.Add(Resources.Load<GameObject>("LightPrefabs/" +
+                                                        configurationData[i].LightFileName));
+            Instantiate(LightPrefabs[i]);
+            LightPrefabs[i].SetActive(false);
+            
+            
+            transformData.Add(JsonUtility.FromJson<TransformData>(
+                File.ReadAllText(Application.dataPath + "/Resources/ModelPositions/" +
+                                 configurationData[i].PositionsFileName + ".json")));
+            
+            cameraParameters.Add(JsonUtility.FromJson<CameraParameters>(
+                File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" +
+                                 configurationData[i].CameraStrategyFileName + ".json")));
+
+            switch (cameraParameters[i].CameraSrategyName)
             {
                 case "Rotate360":
                     cameraStrategy = new Rotate360();
-                    cameraParameters = new CameraParametersRotate360();
-                    cameraParameters = JsonUtility.FromJson<CameraParametersRotate360>(
-                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    cameraParameters[i] = new CameraParametersRotate360();
+                    cameraParameters[i] = JsonUtility.FromJson<CameraParametersRotate360>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" +
+                                         configurationData[i].CameraStrategyFileName + ".json"));
                     break;
                 case "WallMove":
                     cameraStrategy = new WallMove();
-                    cameraParameters = new CameraParametersWallMove();
-                    cameraParameters = JsonUtility.FromJson<CameraParametersWallMove>(
-                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    cameraParameters[i] = new CameraParametersWallMove();
+                    cameraParameters[i] = JsonUtility.FromJson<CameraParametersWallMove>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" +
+                                         configurationData[i].CameraStrategyFileName + ".json"));
                     break;
                 case "SecurityCamera":
                     cameraStrategy = new SecurityCamera();
-                    cameraParameters = new SecurityCamera.CameraParametersSecurityCamera();
-                    cameraParameters = JsonUtility.FromJson<SecurityCamera.CameraParametersSecurityCamera>(
-                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" + config.CameraStrategyFileName + ".json"));
+                    cameraParameters[i] = new SecurityCamera.CameraParametersSecurityCamera();
+                    cameraParameters[i] = JsonUtility.FromJson<SecurityCamera.CameraParametersSecurityCamera>(
+                        File.ReadAllText(Application.dataPath + "/Resources/CameraParameters/" +
+                                         configurationData[i].CameraStrategyFileName + ".json"));
                     break;
             }
-            
-            cameraTransforms = cameraStrategy.GetCameraPositions(cameraParameters, cameraTransform);
-
-            StartCoroutine(NextStep());
         }
     }
 
     IEnumerator NextStep()
     {
         yield return null;
-        for (int i = 0; i < transformData.ModelTransformsList.Count; i++)
+        for (int i = 0; i < configurationData.Count; i++)
         {
-            for (int j = 0; j < cameraTransforms.Count; j++)
+            EnvironmentPrefabs[i].SetActive(true);
+            ModelPrefabs[i].SetActive(true);
+            LightPrefabs[i].SetActive(true);
+            
+            modelTransform = ModelPrefabs[i].GetComponent<Transform>();
+            cameraTransforms = cameraStrategy.GetCameraPositions(cameraParameters[i], cameraTransform);
+
+            for (int k = 0; k < transformData[i].ModelTransformsList.Count; k++)
             {
-                SetParameters(i,j);
-                camerasController.MakeRenderers();
-                Debug.Log("Render");
-                yield return null;
+                for (int j = 0; j < cameraTransforms.Count; j++)
+                {
+                    SetParameters(i, k, j);
+                    camerasController.MakeRenderers();
+                    Debug.Log("Render");
+                    yield return null;
+                }
             }
         }
     }
 
-    private void SetParameters(int i, int j)
+    private void SetParameters(int i, int k, int j)
     {
         cameraTransform.position = cameraTransforms[j].cameraPosition;
         cameraTransform.eulerAngles = cameraTransforms[j].cameraRotation;
-        modelTransform.position = transformData.ModelTransformsList[i].modelPosition;
-        modelTransform.eulerAngles = transformData.ModelTransformsList[i].modelRotation;
+        modelTransform.position = transformData[i].ModelTransformsList[k].modelPosition;
+        modelTransform.eulerAngles = transformData[i].ModelTransformsList[k].modelRotation;
     }
 }
 
 [Serializable]
 public struct ConfigurationFile
+{
+    public List<ConfigurationData> ConfigurationDatas;
+}
+
+[Serializable]
+public struct ConfigurationData
 {
     public string EnvironmentFileName;
     public string ModelFileName;

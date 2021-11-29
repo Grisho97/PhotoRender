@@ -11,7 +11,7 @@ public class PhotoRenderer : MonoBehaviour
     public string PictureName;
     
     public Camera camera;
-    public int index = 0;
+    public int index;
     
     public int width; 
     public int height;
@@ -39,8 +39,9 @@ public class PhotoRenderer : MonoBehaviour
         height = this.camera.pixelHeight;
     }
 
-    public virtual void ChangeBool()
+    public virtual void ChangeBool(int indexCC)
     {
+        index = indexCC;
         GetScreenShot = true;
     }
 
@@ -60,9 +61,7 @@ public class PhotoRenderer : MonoBehaviour
         texture.Apply ();
 
         byte[] bytes = texture.EncodeToPNG();
-
-        index++;
-        Directory.CreateDirectory(Application.dataPath + "/OutPut/Render_" + index +"/");
+        
         File.WriteAllBytes(Application.dataPath + "/OutPut/Render_" + index +"/" + PictureName + ".png", bytes);
     }
 }

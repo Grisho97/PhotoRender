@@ -31,6 +31,7 @@ public class RenderLogic : MonoBehaviour
     private Transform cameraTransform;
     private Transform modelTransform;
 
+    private int index;
 
     private void Awake()
     {
@@ -40,10 +41,10 @@ public class RenderLogic : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            File.WriteAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile1.json", JsonUtility.ToJson(config));
-        }
+        // if (Input.GetKeyDown(KeyCode.U))
+        // {
+        //     File.WriteAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile1.json", JsonUtility.ToJson(config));
+        // }
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -132,8 +133,11 @@ public class RenderLogic : MonoBehaviour
             {
                 for (int j = 0; j < cameraTransforms.Count; j++)
                 {
+                    index++;
+                    Directory.CreateDirectory(Application.dataPath + "/OutPut/Render_" + index +"/");
                     SetParameters(i, k, j);
-                    camerasController.MakeRenderers();
+                    camerasController.MakeRenderers(index);
+                    SaveLogFile(i);
                     Debug.Log("Render");
                     yield return null;
                 }
@@ -147,6 +151,22 @@ public class RenderLogic : MonoBehaviour
         cameraTransform.eulerAngles = cameraTransforms[j].cameraRotation;
         modelTransform.position = transformData[i].ModelTransformsList[k].modelPosition;
         modelTransform.eulerAngles = transformData[i].ModelTransformsList[k].modelRotation;
+    }
+
+    private void SaveLogFile(int i)
+    {
+        RenderParameters renderParameters = new RenderParameters()
+        {
+            configurationParameters = configurationData[i],
+            modelPosition = modelTransform.position,
+            modelRotation = modelTransform.eulerAngles,
+            cameraPosition = cameraTransform.position,
+            cameraRotation = cameraTransform.eulerAngles,
+            ModelIsCrossing = camerasController.IsCrossing(),
+            ModelOutOfView = camerasController.OutOfView()
+        };
+        
+        File.WriteAllText(Application.dataPath + "/OutPut/Render_" + index +"/" + "LogFile.json", JsonUtility.ToJson(renderParameters));
     }
 }
 
@@ -171,4 +191,19 @@ public class CameraTransformData: CameraParameters
 {
     public Vector3 cameraPosition;
     public Vector3 cameraRotation;
+}
+
+[Serializable]
+public struct RenderParameters
+{
+    public ConfigurationData configurationParameters;
+    
+    public Vector3 modelPosition;
+    public Vector3 modelRotation;
+    
+    public Vector3 cameraPosition;
+    public Vector3 cameraRotation;
+
+    public bool ModelIsCrossing;
+    public bool ModelOutOfView;
 }

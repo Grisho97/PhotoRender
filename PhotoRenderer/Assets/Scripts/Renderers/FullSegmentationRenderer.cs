@@ -16,12 +16,6 @@ public class FullSegmentationRenderer : PhotoRenderer
         maskTex = null;
     }
 
-    public override void ChangeBool()
-    {
-        base.ChangeBool();
-        //maskTex = null;
-    }
-
 
     public override void OnRenderImage(RenderTexture src, RenderTexture dest)
     {

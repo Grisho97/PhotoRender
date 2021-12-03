@@ -15,17 +15,17 @@ public class CameraPositionSaver : MonoBehaviour
         SecurityCamera
     }
 
-    public CameraStrategyName cameraStrategyName;
-
+    [Header("Strategy settings")]
     [SerializeField] private Rotate360 rotate360;
     [SerializeField] private WallMove wallMove;
     [SerializeField] private SecurityCamera securityCamera;
     
+    [Header("File parameters")]
+    public CameraStrategyName cameraStrategyName;
+    public string fileName;
     public Transform CameraTransform;
     public Transform TargetTransform;
-    public string fileName;
     
-    [SerializeField]
     private CameraParameters cameraParameters;
 
     private ICameraStrategy CameraStrategy;
@@ -40,13 +40,13 @@ public class CameraPositionSaver : MonoBehaviour
     {
         CameraTransform.LookAt(TargetTransform);
         
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             GetParams();
         }
         
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             SaveFile();
         }
@@ -71,11 +71,14 @@ public class CameraPositionSaver : MonoBehaviour
         cameraParameters.CameraStartRotation = CameraTransform.eulerAngles;
         cameraParameters.TargetPosition = TargetTransform.position;
         cameraParameters = CameraStrategy.GetCameraParameters(cameraParameters);
+        
+        Debug.Log("Camera parameters added. Press S to save file");
     }
 
     private void SaveFile()
     {
         File.WriteAllText(Application.dataPath + "/Resources/CameraParameters/"+ fileName + ".json", JsonUtility.ToJson(cameraParameters));
+        Debug.Log("CameraStrategy file saved");
     }
     
     

@@ -13,7 +13,7 @@ public class SecurityCamera : ICameraStrategy
     public float Angle;
     public int AmmountOfSteps;
     
-    public List<CameraTransformData> cameraPositions;
+    private List<CameraTransformData> cameraPositions;
 
     private CameraParametersSecurityCamera cameraParametersSecurityCamera;
 

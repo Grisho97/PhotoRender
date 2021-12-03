@@ -19,8 +19,7 @@ public class RenderLogic : MonoBehaviour
 
     [SerializeField] 
     private List<CameraParameters> cameraParameters;
-
-    [SerializeField]
+    
     private List<CameraTransformData> cameraTransforms;
 
     [SerializeField]
@@ -45,14 +44,14 @@ public class RenderLogic : MonoBehaviour
         // {
         //     File.WriteAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile1.json", JsonUtility.ToJson(config));
         // }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            BuildAllPrefabs();
+        }
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            config = JsonUtility.FromJson<ConfigurationFile>(
-                File.ReadAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile.json"));
-
-            configurationData = config.ConfigurationDatas;
-
             BuildAllPrefabs();
             StartCoroutine(NextStep());
         }
@@ -60,6 +59,11 @@ public class RenderLogic : MonoBehaviour
 
     private void BuildAllPrefabs()
     {
+        config = JsonUtility.FromJson<ConfigurationFile>(
+            File.ReadAllText(Application.dataPath + "/Resources/ConfigurationFile/ConfigurationFile.json"));
+
+        configurationData = config.ConfigurationDatas;
+        
         EnvironmentPrefabs = new List<GameObject>();
         ModelPrefabs = new List<GameObject>();
         LightPrefabs = new List<GameObject>();
@@ -142,6 +146,10 @@ public class RenderLogic : MonoBehaviour
                     yield return null;
                 }
             }
+            
+            EnvironmentPrefabs[i].SetActive(false);
+            ModelPrefabs[i].SetActive(false);
+            LightPrefabs[i].SetActive(false);
         }
     }
 

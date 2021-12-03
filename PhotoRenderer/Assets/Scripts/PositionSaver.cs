@@ -6,9 +6,9 @@ using System.IO;
 
 public class PositionSaver : MonoBehaviour
 {
-    public Transform Model;
     public string fileName;
-    
+    public Transform Model;
+
     [SerializeField]
     private TransformData Transforms;
 
@@ -39,12 +39,13 @@ public class PositionSaver : MonoBehaviour
             modelRotation = Model.eulerAngles
         };
         Transforms.ModelTransformsList.Add(modelTransforms);
-
+        Debug.Log("Model position added. Move model to a new place or press A to save file");
     }
 
     private void SaveFile()
     {
         File.WriteAllText(Application.dataPath + "/Resources/ModelPositions/"+ fileName + ".json", JsonUtility.ToJson(Transforms));
+        Debug.Log("ModelPosition file saved");
     }
 }
 

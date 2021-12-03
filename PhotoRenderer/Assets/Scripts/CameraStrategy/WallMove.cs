@@ -13,7 +13,7 @@ public class WallMove : ICameraStrategy
     public float StepLength;
     public int AmmountOfSteps;
     
-    public List<CameraTransformData> cameraPositions;
+    private List<CameraTransformData> cameraPositions;
 
     private CameraParametersWallMove cameraParametersWallMove;
     

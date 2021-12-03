@@ -12,7 +12,7 @@ public class Rotate360 : ICameraStrategy
     private Vector3 TargetTransform;
     public int AmmountofPhotos;
     
-    public List<CameraTransformData> cameraPositions;
+    private List<CameraTransformData> cameraPositions;
 
     private CameraParametersRotate360 cameraParametersRotate360;
     
@@ -42,6 +42,7 @@ public class Rotate360 : ICameraStrategy
     {
         CameraTransform = cameraTransform;
         cameraPositions = new List<CameraTransformData>();
+        cameraParametersRotate360 = cameraParameters as CameraParametersRotate360;
         
         CameraStartPosition = cameraParametersRotate360.CameraStartPosition;
         CameraStartRotation = cameraParametersRotate360.CameraStartRotation;

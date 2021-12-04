@@ -62,6 +62,6 @@ public class PhotoRenderer : MonoBehaviour
 
         byte[] bytes = texture.EncodeToPNG();
         
-        File.WriteAllBytes(Application.dataPath + "/OutPut/Render_" + index +"/" + PictureName + ".png", bytes);
+        File.WriteAllBytes(Application.dataPath + "/OutPut/Dataset/Render_" + index +"/" + PictureName + ".png", bytes);
     }
 }

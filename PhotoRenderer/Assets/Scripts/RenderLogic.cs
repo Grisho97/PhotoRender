@@ -53,7 +53,7 @@ public class RenderLogic : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             BuildAllPrefabs();
-            StartCoroutine(NextStep());
+            StartCoroutine(RenderDataset());
         }
     }
 
@@ -121,8 +121,9 @@ public class RenderLogic : MonoBehaviour
         }
     }
 
-    IEnumerator NextStep()
+    IEnumerator RenderDataset()
     {
+        Directory.CreateDirectory(Application.dataPath + "/OutPut/Dataset/");
         yield return null;
         for (int i = 0; i < configurationData.Count; i++)
         {
@@ -138,7 +139,7 @@ public class RenderLogic : MonoBehaviour
                 for (int j = 0; j < cameraTransforms.Count; j++)
                 {
                     index++;
-                    Directory.CreateDirectory(Application.dataPath + "/OutPut/Render_" + index +"/");
+                    Directory.CreateDirectory(Application.dataPath + "/OutPut/Dataset/Render_" + index +"/");
                     SetParameters(i, k, j);
                     camerasController.MakeRenderers(index);
                     SaveLogFile(i);
@@ -174,7 +175,7 @@ public class RenderLogic : MonoBehaviour
             ModelOutOfView = camerasController.OutOfView()
         };
         
-        File.WriteAllText(Application.dataPath + "/OutPut/Render_" + index +"/" + "LogFile.json", JsonUtility.ToJson(renderParameters));
+        File.WriteAllText(Application.dataPath + "/OutPut/Dataset/Render_" + index +"/" + "LogFile.json", JsonUtility.ToJson(renderParameters));
     }
 }
 

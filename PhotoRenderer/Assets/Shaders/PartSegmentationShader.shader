@@ -52,7 +52,7 @@ Shader "Custom/PartSigmentationShader"
 
                 float invert1 = 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv));
 
-                if (depthAlfa != 1 && depthAlfa >= invert1-0.01)
+                if (depthAlfa != 0 && depthAlfa >= invert1-0.01)
                     return fixed4 (1,1,1,1);
                 else
                     return fixed4 (0,0,0,1);

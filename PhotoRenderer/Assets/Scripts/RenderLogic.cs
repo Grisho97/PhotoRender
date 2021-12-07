@@ -68,6 +68,8 @@ public class RenderLogic : MonoBehaviour
         EnvironmentPrefabs = new List<GameObject>();
         ModelPrefabs = new List<GameObject>();
         LightPrefabs = new List<GameObject>();
+        transformData = new List<TransformData>();
+        cameraParameters = new List<CameraParameters>();
 
         for (int i = 0; i < configurationData.Count; i++)
         {
@@ -126,10 +128,10 @@ public class RenderLogic : MonoBehaviour
     {
         DataSaver.SetActive(false);
         Directory.CreateDirectory(Application.dataPath + "/OutPut/Dataset/");
-        yield return null;
+        //yield return new WaitForSeconds(5);
         for (int i = 0; i < configurationData.Count; i++)
         {
-            EnvironmentPrefabs[i].SetActive(true);
+            EnvironmentPrefabs[i].gameObject.SetActive(true);
             ModelPrefabs[i].SetActive(true);
             LightPrefabs[i].SetActive(true);
             

@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 
 public class RenderLogic : MonoBehaviour
 {
+    public GameObject DataSaver;
     public GameObject Cameras;
     public List<GameObject> EnvironmentPrefabs;
     public List<GameObject> ModelPrefabs;
@@ -123,6 +124,7 @@ public class RenderLogic : MonoBehaviour
 
     IEnumerator RenderDataset()
     {
+        DataSaver.SetActive(false);
         Directory.CreateDirectory(Application.dataPath + "/OutPut/Dataset/");
         yield return null;
         for (int i = 0; i < configurationData.Count; i++)
@@ -152,6 +154,7 @@ public class RenderLogic : MonoBehaviour
             ModelPrefabs[i].SetActive(false);
             LightPrefabs[i].SetActive(false);
         }
+        DataSaver.SetActive(true);
     }
 
     private void SetParameters(int i, int k, int j)

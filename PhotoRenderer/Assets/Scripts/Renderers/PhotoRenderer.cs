@@ -7,7 +7,7 @@ using UnityEngine.Windows;
 
 public class PhotoRenderer : MonoBehaviour
 {
-    public string Folder;
+    //public string Folder;
     public string PictureName;
     
     protected Camera camera { get; private set; }
@@ -19,8 +19,8 @@ public class PhotoRenderer : MonoBehaviour
     private bool GetScreenShot = false;
 
     //public RenderTexture DefaultTexture;
-    protected RenderTexture ModelTexture;
-    protected RenderTexture EnvironmentTexture;
+    public RenderTexture ModelTexture;
+    public RenderTexture EnvironmentTexture;
     
     public virtual void OnEnable()
     {

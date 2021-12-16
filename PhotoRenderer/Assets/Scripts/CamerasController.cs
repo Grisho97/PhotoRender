@@ -43,25 +43,9 @@ public class CamerasController : MonoBehaviour
         texture2.Apply();
         beta = texture2;
 
-        if (ModelExistCheck(texture1,texture2))
-        {
-            modelIsOutOfView = true;
-            //Debug.Log("Model is not in a view of camera");
-        }
-        else
-        {
-            modelIsOutOfView = false;
-        }
+        modelIsOutOfView = ModelExistCheck(texture1,texture2);
 
-        if (CrossingCheck(texture1,texture2))
-        {
-            modelIsCrossing = true;
-            // Debug.Log("Model is crossing");
-        }
-        else
-        {
-            modelIsCrossing = false;
-        }
+        modelIsCrossing = CrossingCheck(texture1,texture2);
     }
 
     public bool IsCrossing()

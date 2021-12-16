@@ -5,10 +5,8 @@ using UnityEngine;
 
 public class ScreenRenderer : PhotoRenderer
 {
-    public override void OnRenderImage(RenderTexture src, RenderTexture dest)
+    /*public override void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        //Graphics.Blit(src,dest);
-        
         if (GetScreenShot)
         {
             RenderTexture Mask = RenderTexture.GetTemporary (width, height, 16, RenderTextureFormat.ARGB32); 
@@ -17,6 +15,6 @@ public class ScreenRenderer : PhotoRenderer
         }
         
         base.OnRenderImage(src,dest);
-    }
+    }*/
     
 }

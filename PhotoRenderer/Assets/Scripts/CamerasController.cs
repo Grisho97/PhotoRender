@@ -10,8 +10,8 @@ public class CamerasController : MonoBehaviour
     public RenderTexture ModelTexture;
     public RenderTexture EnvironmentTexture;
 
-    public Texture2D alfa;
-    public Texture2D beta;
+    private Texture2D alfa;
+    private Texture2D beta;
 
     private bool modelIsCrossing;
     private bool modelIsOutOfView;

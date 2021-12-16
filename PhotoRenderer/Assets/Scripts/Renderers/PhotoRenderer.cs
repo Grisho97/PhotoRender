@@ -10,17 +10,17 @@ public class PhotoRenderer : MonoBehaviour
     public string Folder;
     public string PictureName;
     
-    public Camera camera;
-    public int index;
+    protected Camera camera { get; private set; }
+    private int index;
     
-    public int width; 
-    public int height;
+    protected int width; 
+    protected int height;
 
-    public bool GetScreenShot = false;
+    private bool GetScreenShot = false;
 
-    public RenderTexture DefaultTexture;
-    public RenderTexture ModelTexture;
-    public RenderTexture EnvironmentTexture;
+    //public RenderTexture DefaultTexture;
+    protected RenderTexture ModelTexture;
+    protected RenderTexture EnvironmentTexture;
     
     public virtual void OnEnable()
     {

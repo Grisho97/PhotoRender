@@ -7,8 +7,6 @@ public class PartSegmentationRenderer : PhotoRenderer
     public Material PartSigmentationMaterial;
     public Shader PartSigmentationShader;
 
-    //public FullSegmentationRenderer s;
-
     public override void OnEnable()
     {
         base.OnEnable();

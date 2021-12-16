@@ -157,6 +157,7 @@ public class RenderLogic : MonoBehaviour
             LightPrefabs[i].SetActive(false);
         }
         DataSaver.SetActive(true);
+        Debug.Log("Render done!");
     }
 
     private void SetParameters(int i, int k, int j)

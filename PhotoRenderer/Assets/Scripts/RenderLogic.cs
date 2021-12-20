@@ -73,19 +73,19 @@ public class RenderLogic : MonoBehaviour
 
         for (int i = 0; i < configurationData.Count; i++)
         {
-            EnvironmentPrefabs.Add(Resources.Load("EnvironmentPrefabs/" +
-                                                              configurationData[i].EnvironmentFileName) as GameObject);
-            Instantiate(EnvironmentPrefabs[i]);
+            var prefabE = Instantiate(Resources.Load("EnvironmentPrefabs/" +
+                                                    configurationData[i].EnvironmentFileName) as GameObject);
+            EnvironmentPrefabs.Add(prefabE);
             EnvironmentPrefabs[i].SetActive(false);
-
-            ModelPrefabs.Add(Resources.Load<GameObject>("ModelPrefabs/" +
-                                                        configurationData[i].ModelFileName));
-            Instantiate(ModelPrefabs[i]);
+            
+            var prefabM = Instantiate(Resources.Load<GameObject>("ModelPrefabs/" +
+                                                                 configurationData[i].ModelFileName));
+            ModelPrefabs.Add(prefabM);
             ModelPrefabs[i].SetActive(false);
 
-            LightPrefabs.Add(Resources.Load<GameObject>("LightPrefabs/" +
-                                                        configurationData[i].LightFileName));
-            Instantiate(LightPrefabs[i]);
+            var prefabL = Instantiate(Resources.Load<GameObject>("LightPrefabs/" +
+                                                                 configurationData[i].LightFileName));
+            LightPrefabs.Add(prefabL);
             LightPrefabs[i].SetActive(false);
             
             
